@@ -11,7 +11,7 @@ class Manufacturer(models.Model):
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
-    manufacturer = model.ForeignKey(Manufacturer, on_delete=models.CASCADE)
+    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
 
     def __str__(self):
         return f"{self.manufacturer.name} {self.model}"

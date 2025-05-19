@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'taxi'
 ]
+
+AUTH_USER_MODEL = 'taxi.Driver'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
